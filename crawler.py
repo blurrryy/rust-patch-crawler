@@ -20,11 +20,11 @@ Setup the MongoDB Connection by changing the following line.
 Default: client = MongoClient('localhost', 27017)
 
 Change the collection by changing the line after.
-Default: col = client['rust']['patches-notes']
+Default: col = client['rust']['patchnotes']
 """
 
 client = MongoClient('localhost', 27017)
-col = client['rust']['patches-notes']
+col = client['rust']['patchnotes']
 
 written = 0
 print("\n***\nStart Rust Patchnotes Crawling...\n***\n")
